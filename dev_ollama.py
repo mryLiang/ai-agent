@@ -6,7 +6,6 @@ from platform_utils import get_ollama_executable
 
 OLLAMA_PATH = get_ollama_executable()
 
-
 def run_ollama_command(args):
     try:
         process = subprocess.Popen(

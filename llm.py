@@ -3,10 +3,10 @@ import subprocess
 import os
 from config import MODEL_NAME, AUTO_PULL
 from log_util import log_llm_request, log_llm_response
+from platform_utils import get_ollama_executable
 
 OLLAMA_URL = "http://localhost:11434/api/generate"
-OLLAMA_PATH = os.path.join("ollama", "ollama.exe")
-
+OLLAMA_PATH = get_ollama_executable()
 
 def ensure_model():
     if not AUTO_PULL:

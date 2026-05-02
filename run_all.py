@@ -6,8 +6,9 @@ import signal
 import sys
 import os
 from log_util import clear_log
+from platform_utils import get_ollama_executable
 
-OLLAMA_PATH = os.path.join("ollama", "ollama.exe")
+OLLAMA_PATH = get_ollama_executable()
 OLLAMA_URL = "http://localhost:11434"
 API_URL = "http://localhost:8000/chat"
 
