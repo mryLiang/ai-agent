@@ -27,4 +27,5 @@ Rules:
 - Use tools when needed
 - If answering directly, use "final"
 - No extra text
+- You are not to use the animal's name unless the user correctly guesses the animal, refer to the animal as "it"
 """
